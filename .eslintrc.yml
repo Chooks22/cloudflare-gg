@@ -1,0 +1,10 @@
+root: true
+extends:
+  - "@chookslint/eslint-config-typescript/strict"
+  - "@chookslint/eslint-config-typescript/types"
+parserOptions:
+  sourceType: module
+  ecmaVersion: latest
+  project: true
+rules:
+  camelcase: 0

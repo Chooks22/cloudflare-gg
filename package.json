@@ -1,0 +1,26 @@
+{
+  "name": "cloudflare-gg",
+  "type": "module",
+  "scripts": {
+    "deploy": "bun wrangler deploy",
+    "create-invite": "bun run scripts/create-invite.ts",
+    "generate-key": "bun run scripts/generate-key.ts",
+    "list-keys": "bun run scripts/list-keys.ts"
+  },
+  "devDependencies": {
+    "@chookslint/eslint-config-typescript": "^3.0.2",
+    "@cloudflare/workers-types": "^4.20240405.0",
+    "@types/bun": "^1.0.12",
+    "@typescript-eslint/eslint-plugin": "^7.6.0",
+    "@typescript-eslint/parser": "^7.6.0",
+    "eslint": "^8",
+    "typescript": "^5.4.5",
+    "wrangler": "^3.50.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "overrides": {
+    "@types/node": "20.8.3"
+  }
+}
